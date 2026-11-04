@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="成田山新勝寺の観光ガイドと、写真・動画から作る旅行記録ムービー制作サービス。">
+<title>成田の旅案内｜観光ガイド・旅行記録ムービー</title>
+<style>
+:root{--forest:#183b32;--forest2:#285447;--gold:#c5a36a;--cream:#f6f3eb;--paper:#fffefa;--ink:#202822;--muted:#69756d;--line:#e7e2d8;--red:#a84c3c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.75}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a{touch-action:manipulation}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:30;background:#fffefaed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:serif;font-weight:700;color:var(--forest);font-size:19px;letter-spacing:.07em}.links{display:flex;align-items:center;gap:20px;font-size:13px;color:#46534b}.links a:hover{color:#98723a}.nav-cta{background:var(--forest);color:white;padding:9px 15px;border-radius:3px}.hamb{display:none;border:0;background:none;font-size:25px;color:var(--forest)}
+.hero{min-height:620px;display:grid;place-items:center;text-align:center;color:#fff;position:relative;background:linear-gradient(90deg,#102820d9,#10282070),url('https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=2000&q=85') center/cover}.hero:after{content:"";position:absolute;inset:16px;border:1px solid #ffffff70}.hero-inner{position:relative;z-index:1;max-width:850px;padding:90px 20px}.eyebrow{font-size:11px;letter-spacing:.25em;color:#e8d3aa}.hero h1{font-family:serif;font-size:clamp(36px,6vw,66px);line-height:1.35;margin:18px 0}.hero p{color:#eee9df;font-size:16px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border:1px solid var(--gold);padding:12px 21px;border-radius:3px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.gold{background:var(--gold);color:#172d25}.btn.outline{color:white;border-color:#ffffffa8;background:transparent}.btn.dark{background:var(--forest);color:white;border-color:var(--forest)}.btn.light{background:white;color:var(--forest);border-color:var(--line)}
+section{padding:78px 0}.section-head{text-align:center;margin:0 auto 38px}.kicker{font-size:11px;letter-spacing:.22em;color:#9a7844;font-weight:800}.section-head h2{font-family:serif;color:var(--forest);font-size:clamp(27px,4vw,39px);margin:7px 0}.section-head p{color:var(--muted);margin:0}.cream{background:var(--cream)}.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.photo{width:100%;height:390px;object-fit:cover;border-radius:3px}.copy h3{font-family:serif;font-size:28px;color:var(--forest);line-height:1.5;margin:0 0 12px}.copy p{color:#59645d}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);background:white}.card img{height:205px;object-fit:cover}.card-body{padding:18px}.card h3{font-family:serif;color:var(--forest);font-size:19px;margin:0 0 7px}.card p{font-size:14px;color:var(--muted);margin:0}
+.dark-section{background:var(--forest);color:#fff}.dark-section .section-head h2{color:white}.dark-section .section-head p{color:#d6e0d9}.dark-section .copy h3{color:#efd9ad}.dark-section .copy p,.dark-section .copy li{color:#e2e9e4}.tag{display:inline-block;background:#eee5d4;color:#70572f;font-size:12px;padding:4px 10px;margin-bottom:10px}.notice{display:inline-block;color:#f2dcae;border:1px solid var(--gold);padding:7px 12px;font-size:13px;margin-top:10px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:20px;background:var(--cream);border-top:3px solid var(--gold)}.step b{font-family:serif;font-size:29px;color:#b08b50}.step h3{font-size:16px;color:var(--forest);margin:5px 0}.step p{font-size:13px;color:var(--muted);margin:0}
+.price-card{max-width:700px;margin:auto;background:white;border:1px solid var(--line);padding:30px;text-align:center}.price{font-size:40px;font-weight:800;color:#99743c;line-height:1.2}.price small{font-size:14px}.fine{font-size:12px;color:var(--muted)}
+.order{background:#f8f6f0}.order-layout{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:start}.panel{background:white;border:1px solid var(--line);padding:24px;border-radius:4px}.panel h3{margin:0 0 18px;color:var(--forest);font-family:serif;font-size:22px}.field{margin:0 0 16px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:11px 12px;border:1px solid #d9d4c9;border-radius:3px;background:white;color:var(--ink)}.field textarea{min-height:100px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #c5a36a66;border-color:#b28e55}.hint{font-size:12px;color:var(--muted);margin-top:5px}.filebox{border:1px dashed #b9ad98;background:#fcfaf5;padding:15px;border-radius:3px}.filebox input{border:0;padding:5px 0}.filelist{font-size:12px;color:var(--muted);margin-top:8px;overflow-wrap:anywhere}.checkline{display:flex;gap:9px;align-items:flex-start;font-size:13px;margin:14px 0}.checkline input{margin-top:5px}.summary{position:sticky;top:88px;background:var(--forest);color:white}.summary h3{color:#f0d9ad}.sumrow{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid #ffffff30;padding:10px 0;font-size:14px}.sumtotal{font-size:23px;font-weight:800;color:#f0d9ad;padding-top:14px}.status{font-size:12px;background:#ffffff16;border:1px solid #ffffff40;padding:12px;margin-top:15px;color:#e7eee9}.noticebox{background:#fff5df;border:1px solid #e6cf9c;padding:13px;color:#654f2c;font-size:13px;margin:15px 0}.formmsg{font-size:13px;margin-top:12px;white-space:pre-wrap}.policy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.policy{border:1px solid var(--line);padding:20px}.policy h3{font-size:16px;color:var(--forest);margin:0 0 7px}.policy p{font-size:13px;color:var(--muted);margin:0}.contact{background:var(--forest);color:white;text-align:center}.contact .section-head h2{color:white}.contact .section-head p{color:#d6e0d9}.contact a{color:#f1d9ab;text-decoration:underline}footer{background:#102820;color:#cbd5ce;text-align:center;padding:25px;font-size:12px}.footbrand{font-family:serif;color:#ead5ac;font-size:18px;margin-bottom:5px}
+@media(max-width:800px){.links{display:none;position:absolute;top:68px;left:0;right:0;background:white;padding:18px 22px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.links.open{display:flex}.hamb{display:block}.split,.order-layout{grid-template-columns:1fr}.summary{position:static}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.photo{height:300px}}
+@media(max-width:520px){.wrap{width:calc(100% - 30px)}.hero{min-height:550px}.hero h1{font-size:37px}.cards,.steps,.policy-grid{grid-template-columns:1fr}.panel{padding:18px}section{padding:60px 0}.price{font-size:35px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top">成田の旅案内</a>
+<button class="hamb" aria-label="メニュー" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<nav class="links">
+<a href="#guide">観光ガイド</a><a href="#film">ムービー制作</a><a href="#flow">ご利用の流れ</a><a href="#order">お申し込み</a><a href="#about">運営者情報</a><a class="nav-cta" href="#order">注文する</a>
+</nav></div></header>
+<main id="top">
+<section class="hero">
+<div class="hero-inner"><div class="eyebrow">NARITA TRAVEL & MEMORY FILM</div>
+<h1>成田の魅力を、もっと深く。<br>旅の思い出を、いつまでも。</h1>
+<p>成田山新勝寺のムービー観光ガイドと、<br>写真・動画から作るオリジナル旅行記録ムービー。</p>
+<div class="actions"><a class="btn gold" href="#guide">観光ガイドを見る</a><a class="btn outline" href="#film">ムービー制作を見る</a></div>
+</div></section>
+
+<section class="cream"><div class="wrap split">
+<img class="photo" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1100&q=85" alt="日本の歴史ある街並み">
+<div class="copy"><span class="tag">WELCOME TO NARITA</span><h3>訪れる時間を、<br>もっと楽しく、思い出深く。</h3>
+<p>成田には、歴史ある寺院や趣ある参道、思わず立ち寄りたくなるお店があります。</p><p>観光ガイドで成田の魅力を発見し、旅行記録ムービーで大切な旅を形に残してみませんか。</p></div>
+</div></section>
+
+<section id="guide"><div class="wrap"><div class="section-head"><div class="kicker">NARITASAN GUIDE</div><h2>成田山新勝寺 観光ガイド</h2><p>見どころを知れば、成田山散策はもっと面白い。</p></div>
+<div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=800&q=85" alt="日本の寺院"><div class="card-body"><h3>成田山新勝寺</h3><p>境内の名所や建物の見どころを、ムービー形式でわかりやすくご案内します。</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1528360983277-13d401aea0f0?auto=format&fit=crop&w=800&q=85" alt="日本の街並み"><div class="card-body"><h3>表参道の散策</h3><p>歴史ある街並みや、散策中に立ち寄りたいスポットをご紹介します。</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=85" alt="日本の食文化"><div class="card-body"><h3>お店・食べ歩き</h3><p>周辺のお店や食べ歩きの候補を紹介し、成田での時間を充実させます。</p></div></article>
+</div></div></section>
+
+<section class="dark-section"><div class="wrap split">
+<img class="photo" src="https://images.unsplash.com/photo-1576016770956-debb5d2f2f6b?auto=format&fit=crop&w=1000&q=85" alt="日本の伝統建築">
+<div class="copy"><div class="kicker">A FRIENDLY MOVIE GUIDE</div><h3>赤毛の侍ガイドと、<br>成田のまちを冒険しよう。</h3>
+<p>個性ある侍キャラクターが、成田山新勝寺の名所や参道のおすすめスポットをムービーでご案内。初めて訪れる方にも、楽しく散策していただけるガイドを目指しています。</p>
+<ul><li>名所の見どころ・豆知識</li><li>参道や周辺スポットの紹介</li><li>日本語・英語の案内を目指して制作</li></ul><span class="notice">テスト提供中・無料</span></div>
+</div></section>
+
+<section id="film" class="cream"><div class="wrap"><div class="section-head"><div class="kicker">YOUR MEMORY, YOUR FILM</div><h2>旅行記録ムービー制作</h2><p>スマートフォンに眠っている写真や動画を、見返したくなる一本に。</p></div>
+<div class="split"><img class="photo" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=85" alt="映像編集作業">
+<div class="copy"><h3>撮ったままの思い出を、<br>ひとつの物語に。</h3><p>旅行中に撮影した写真や動画をお預かりし、順番やテンポを整え、音楽・テロップなどを加えてオリジナルムービーに編集します。</p>
+<ul><li>家族旅行・友人との旅行</li><li>カップル・記念日の旅行</li><li>国内旅行・海外旅行</li><li>写真中心・動画中心、どちらも相談可能</li></ul>
+<div class="price">$15 USD <small>/ 約1分の動画1本</small></div><p class="fine">長さ・素材量・追加編集などにより、別途見積もりとなる場合があります。制作前に金額を確認します。</p>
+<a class="btn dark" href="#order">このサービスを申し込む</a></div></div></div></section>
+
+<section id="flow"><div class="wrap"><div class="section-head"><div class="kicker">HOW IT WORKS</div><h2>お申し込みから納品まで</h2><p>内容と料金を確認してから制作を開始します。</p></div>
+<div class="steps">
+<div class="step"><b>01</b><h3>お申し込み</h3><p>フォームから希望内容・連絡先・素材の概要を送信します。</p></div>
+<div class="step"><b>02</b><h3>内容・料金の確認</h3><p>素材量や希望内容を確認し、納期と最終料金をご案内します。</p></div>
+<div class="step"><b>03</b><h3>お支払い・素材提出</h3><p>専用のカード決済ページでお支払い後、安全な方法で素材を受け取ります。</p></div>
+<div class="step"><b>04</b><h3>編集・納品</h3><p>動画を制作し、確認後に完成品をダウンロードリンクで納品します。</p></div>
+</div></div></section>
+
+<section id="order" class="order"><div class="wrap">
+<div class="section-head"><div class="kicker">ORDER FORM</div><h2>旅行記録ムービー お申し込み</h2><p>以下をご入力ください。送信後、内容確認のためメールでご連絡します。</p></div>
+<div class="order-layout">
+<form class="panel" id="orderForm">
+<h3>お客様情報・ご希望内容</h3>
+<div class="field"><label for="name">お名前 *</label><input id="name" name="name" required autocomplete="name" placeholder="例：Taro Yamada"></div>
+<div class="field"><label for="email">メールアドレス *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="name@example.com"></div>
+<div class="field"><label for="destination">旅行先 *</label><input id="destination" name="destination" required placeholder="例：成田、日本、台湾"></div>
+<div class="field"><label for="length">希望する完成動画の長さ *</label><select id="length" name="length" required><option value="1">約1分（15 USD）</option><option value="2">約2分（30 USD・仮見積もり）</option><option value="3">約3分（45 USD・仮見積もり）</option><option value="quote">その他・相談したい</option></select><div class="hint">1分あたり15 USDを目安とした仮計算です。最終料金は素材・編集内容を確認後に確定します。</div></div>
+<div class="field"><label for="style">希望する雰囲気</label><select id="style" name="style"><option>おまかせ</option><option>感動的・思い出重視</option><option>明るく楽しい</option><option>シンプル・おしゃれ</option><option>映画のような雰囲気</option></select></div>
+<div class="field"><label for="details">ご希望・ご要望</label><textarea id="details" name="details" placeholder="動画に入れたい内容、希望納期、音楽や字幕の希望など"></textarea></div>
+<div class="field"><label for="files">写真・動画（任意）</label><div class="filebox"><input id="files" name="files" type="file" accept="image/*,video/*" multiple><div class="hint">この画面ではファイルを選択できます。現段階ではサーバーへのアップロードは行われません。素材の提出方法は受付後に個別にご案内します。</div><div class="filelist" id="fileList">ファイルはまだ選択されていません。</div></div></div>
+<label class="checkline"><input type="checkbox" id="agree" required><span>入力した情報を問い合わせ対応・見積もりのために利用することに同意します。写真・動画の利用範囲は、素材提出前に別途確認します。 *</span></label>
+<button class="btn dark" type="submit" style="width:100%">申し込み内容をメールで送る</button>
+<div class="formmsg" id="formMsg" role="status" aria-live="polite"></div>
+</form>
+<aside class="panel summary">
+<h3>料金の目安</h3>
+<div class="sumrow"><span>基本料金</span><strong>15 USD / 約1分</strong></div>
+<div class="sumrow"><span>希望の長さ</span><strong id="sumLength">約1分</strong></div>
+<div class="sumrow"><span>概算料金</span><strong class="sumtotal" id="sumPrice">$15 USD</strong></div>
+<div class="status"><strong>お支払いについて</strong><br>内容・料金の確認後、クレジットカード決済用の専用リンクをご案内します。現在、このサイトには決済機能はまだ接続されていません。</div>
+<div class="noticebox">お客様の同意と料金確認が完了する前に、制作や決済を進めることはありません。</div>
+<p class="fine" style="color:#dbe4de">※為替換算・カード会社の手数料はご利用のカード会社により異なります。</p>
+</aside>
+</div></div></section>
+
+<section id="about"><div class="wrap"><div class="section-head"><div class="kicker">ABOUT & PRIVACY</div><h2>運営者情報・素材の取り扱い</h2><p>大切な旅行の記録をお預かりするため、取り扱いを丁寧に確認します。</p></div>
+<div class="policy-grid">
+<div class="policy"><h3>代表者</h3><p>鈴木 巧人</p></div>
+<div class="policy"><h3>お問い合わせ</h3><p><a href="mailto:karabenotakuto@gmail.com">karabenotakuto@gmail.com</a><br>電話番号は個人情報保護のため掲載していません。</p></div>
+<div class="policy"><h3>素材の利用目的</h3><p>お預かりした写真・動画は、合意したムービー制作の目的に限って使用します。</p></div>
+<div class="policy"><h3>第三者への提供</h3><p>お客様の許可なく素材を第三者に提供したり、制作事例として公開したりしません。</p></div>
+<div class="policy"><h3>保管・削除</h3><p>素材の保管期間と削除時期は、制作開始前にお客様と確認します。</p></div>
+<div class="policy"><h3>修正・キャンセル</h3><p>修正回数、キャンセル、返金の条件は、決済前に個別に提示・合意します。</p></div>
+</div></div></section>
+
+<section class="contact"><div class="wrap"><div class="section-head"><div class="kicker">CONTACT</div><h2>ご相談・お問い合わせ</h2><p>サービスについての質問や、制作前のご相談も歓迎します。</p></div>
+<p>メール：<a href="mailto:karabenotakuto@gmail.com">karabenotakuto@gmail.com</a></p>
+<a class="btn gold" href="mailto:karabenotakuto@gmail.com?subject=旅行記録ムービーについてのお問い合わせ">メールで問い合わせる</a>
+<p class="fine" style="color:#d8e0da;margin-top:18px">※本サイトは準備中のサンプルです。実際の受付開始前に決済・アップロード・規約等の設定が必要です。</p>
+</div></section>
+</main>
+<footer><div class="footbrand">成田の旅案内</div><div>成田山観光ガイド ＆ 旅行記録ムービー制作</div><div>代表者：鈴木 巧人</div><div style="margin-top:8px">© 2026 Narita Travel & Memory Film</div></footer>
+
+<script>
+const lengthSelect=document.getElementById('length');
+const sumLength=document.getElementById('sumLength');
+const sumPrice=document.getElementById('sumPrice');
+function updatePrice(){
+ const v=lengthSelect.value;
+ if(v==='quote'){sumLength.textContent='個別相談';sumPrice.textContent='要見積もり';return;}
+ const n=Number(v);sumLength.textContent='約'+n+'分';sumPrice.textContent='$'+(15*n)+' USD';
+}
+lengthSelect.addEventListener('change',updatePrice);updatePrice();
+
+const fileInput=document.getElementById('files');
+fileInput.addEventListener('change',()=>{
+ const files=[...fileInput.files];
+ document.getElementById('fileList').textContent=files.length
+ ? files.map(f=>`${f.name}（${(f.size/1024/1024).toFixed(1)} MB）`).join(' / ')
+ : 'ファイルはまだ選択されていません。';
+});
+
+document.getElementById('orderForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const form=e.currentTarget;
+ if(!form.reportValidity())return;
+ const data=new FormData(form);
+ const len=data.get('length');
+ const price=len==='quote'?'個別見積もり':`$${15*Number(len)} USD（仮見積もり）`;
+ const files=[...fileInput.files].map(f=>f.name).join('、')||'未選択（後日提出）';
+ const subject='旅行記録ムービー制作のお申し込み';
+ const body=[
+ '旅行記録ムービー制作のお申し込み',
+ '',
+ `お名前：${data.get('name')}`,
+ `メール：${data.get('email')}`,
+ `旅行先：${data.get('destination')}`,
+ `希望の長さ：${len==='quote'?'相談':`約${len}分`}`,
+ `概算料金：${price}`,
+ `希望の雰囲気：${data.get('style')}`,
+ `選択ファイル名：${files}`,
+ '',
+ 'ご希望・ご要望：',
+ data.get('details')||'（記載なし）',
+ '',
+ '※選択した写真・動画ファイルはこのメールに自動添付されません。'
+ ].join('\n');
+ document.getElementById('formMsg').textContent='メールアプリを開きます。内容を確認して送信してください。ファイルは自動添付されないため、素材の提出方法は受付後にご案内します。';
+ window.location.href=`mailto:karabenotakuto@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+</script>
+</body>
+</html>
